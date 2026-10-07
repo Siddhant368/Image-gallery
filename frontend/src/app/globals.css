@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #10B981;
+  --color-brand-primaryHover: #059669;
+  --color-brand-darkGreen: #047857;
+  --color-brand-veryDarkGreen: #064E3B;
+  
+  --color-brand-bgMain: var(--bg-main);
+  --color-brand-bgSecondary: var(--bg-secondary);
+  --color-brand-bgCard: var(--bg-card);
+  --color-brand-bgCardHover: var(--bg-card-hover);
+  --color-brand-bgError: var(--bg-error);
+  
+  --color-brand-border: var(--border-color);
+  
+  --color-brand-textMain: var(--text-main);
+  --color-brand-textSecondary: var(--text-secondary);
+  --color-brand-textMuted: var(--text-muted);
+
+  --color-brand-hoverSoft: var(--bg-hover-soft);
+  --color-brand-hoverStrong: var(--bg-hover-strong);
+}
+
+:root {
+  /* Light theme variables */
+  --bg-main: #F8FAFC;
+  --bg-secondary: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F1F5F9;
+  --border-color: #E2E8F0;
+  --text-main: #1E293B;
+  --text-secondary: #475569;
+  --text-muted: #64748B;
+  
+  --bg-hover-soft: #F1F5F9;
+  --bg-hover-strong: #E2E8F0;
+  
+  --bg-error: #FEF2F2;
+}
+
+.dark {
+  /* Dark theme variables */
+  --bg-main: #03110D;
+  --bg-secondary: #071A15;
+  --bg-card: #0B211A;
+  --bg-card-hover: #0E2A21;
+  --border-color: #173B30;
+  --text-main: #FFFFFF;
+  --text-secondary: #B7D3C7;
+  --text-muted: #86A99A;
+  
+  --bg-hover-soft: #0B211A;
+  --bg-hover-strong: #071A15;
+  
+  --bg-error: #1F0909;
+}
+
+@layer base {
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+  }
+}
